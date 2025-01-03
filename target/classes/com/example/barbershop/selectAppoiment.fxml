@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane accessibleRole="HYPERLINK" prefHeight="646.0" prefWidth="874.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.barbershop.selectAppointment">
+   <children>
+      <ImageView fitHeight="159.0" fitWidth="299.0" layoutX="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/barbershop.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="87.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Barbershop ">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Text>
+      <MenuButton fx:id="locationMenuButton" layoutX="87.0" layoutY="183.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="193.0" style="-fx-background-color: #FFFfFF;" text="Choose The Location" textAlignment="CENTER">
+        <items>
+          <MenuItem fx:id="streetVictorFelea" mnemonicParsing="false" text="Strada Victor Felea nr.11" />
+        </items>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="beardMenuButton" layoutX="83.0" layoutY="267.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="281.0" style="-fx-background-color: #FFFfFF;" text="Beard" textAlignment="CENTER">
+         <items>
+            <MenuItem fx:id="GroomedBeard" mnemonicParsing="false" text="Groomed Beard                      30 min      45.00 RON" />
+            <MenuItem fx:id="groomedBeardWithHotTowel" mnemonicParsing="false" text="Groomed Beard (With Hot Towel)     30 min      55.00 RON" />
+            <MenuItem fx:id="shavingWithWarmTowel" mnemonicParsing="false" text="Shaving With A Warm Towel          40 min      60.00 RON" />
+         </items>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="haircutMenuButton" layoutX="83.0" layoutY="325.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="281.0" style="-fx-background-color: #FFFfFF;" text="Haircut" textAlignment="CENTER">
+         <items>
+            <MenuItem fx:id="trimmed" mnemonicParsing="false" text="Trimmed             45 min        70.00 RON" />
+            <MenuItem fx:id="trimmedAndWashed" mnemonicParsing="false" text="Trimmed And Washed  60 min        80.00 RON" />
+         </items>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="beardAndHaircutMenuButton" layoutX="83.0" layoutY="387.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="281.0" style="-fx-background-color: #FFFfFF;" text="Beard And Haircut" textAlignment="CENTER">
+         <items>
+            <MenuItem fx:id="beardTrimmedAndHairTrimmed" mnemonicParsing="false" text="Beard Trimmed And Trimmed                60 min    95.00 RON" />
+            <MenuItem fx:id="cutWashedTrimmedBeard" mnemonicParsing="false" text="Cut, Washed, Trimmed Beard               70 min   105.00 RON" />
+            <MenuItem fx:id="cutWashedTrimmedBeardWithHotTowel" mnemonicParsing="false" text="Cut, Washed, Trimmed Beard (Warm Towel)  70 min   120.00 RON" />
+         </items>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MenuButton>
+      <Text layoutX="87.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create An Online Appointment For:">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="6.0" layoutY="9.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="45.0" prefWidth="54.0" style="-fx-background-color: #FFFFFF;" />
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="21.0" layoutY="19.0">
+         <image>
+            <Image url="@../../../images/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="21.0" layoutY="19.0">
+         <image>
+            <Image url="@../../../images/back.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="continueButtton" layoutX="148.0" layoutY="483.0" mnemonicParsing="false" onAction="#continueButtonOnAction" prefHeight="38.0" prefWidth="152.0" style="-fx-background-color: #000000;" text="CONTINUE" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+      <WebView fx:id="googleMapView" layoutX="451.0" layoutY="115.0" prefHeight="450.0" prefWidth="379.0" />
+      <Label fx:id="selectAnAppointment" layoutX="109.0" layoutY="457.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

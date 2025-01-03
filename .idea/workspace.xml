@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9aa4f6f6-0d5a-4903-9315-283b752b9c8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgresql-42.7.4 (1).jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/Appointments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/BarberDateAndTimeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/DataBaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/MyAppointmentsForEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/changePassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/mainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/myAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/myAppointmentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/selectAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/Appoiment.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/BarberDateAndTime.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/Register.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/changePassword.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/myAccount.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/myAppointments.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/myAppointmentsForEmployee.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/selectAppoiment.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/1000_F_365516654_B0J3aPLd1FZw4bPtDEIIoSfkbw0OHnlJ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/adam.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/adress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/barbershop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/costi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8-instagram-16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8-tiktok-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/ionel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/lock.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/Appoiment.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/BarberDateAndTime.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/BarberDateAndTimeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/DataBaseConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/HelloApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/Register.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/RegisterController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/changePassword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/changePassword.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/mainApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/myAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/myAccount.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/selectAppoiment.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/selectAppointment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/images/1000_F_365516654_B0J3aPLd1FZw4bPtDEIIoSfkbw0OHnlJ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/images/adam.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/images/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/images/barbershop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/images/costi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/images/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/images/ionel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/images/lock.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/images/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2p9yN6JcKwdNiwgHDX2sjZKohBa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/ilieb/IdeaProjects/Work_Activites/BarberShop/src/main/java/com/example/barbershop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ilieb/IdeaProjects/Work_Activites/BarberShop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ilieb\IdeaProjects\Work_Activites\Proiect3" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ilieb\IdeaProjects\Work_Activites\Proiect3\src\main\resources\com\example\proiect3" />
+      <recent name="C:\Users\ilieb\IdeaProjects\Work_Activites\Proiect3\src\main\java\com\example\proiect3" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9aa4f6f6-0d5a-4903-9315-283b752b9c8c" name="Changes" comment="" />
+      <created>1732192543353</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732192543353</updated>
+      <workItem from="1732192544378" duration="750000" />
+      <workItem from="1732523667351" duration="1440000" />
+      <workItem from="1733387670078" duration="8658000" />
+      <workItem from="1733398914220" duration="3928000" />
+      <workItem from="1733481159932" duration="9116000" />
+      <workItem from="1733493614259" duration="1358000" />
+      <workItem from="1733575242317" duration="5694000" />
+      <workItem from="1733657535337" duration="14936000" />
+      <workItem from="1733725266477" duration="1496000" />
+      <workItem from="1733733301139" duration="2007000" />
+      <workItem from="1733996101296" duration="7359000" />
+      <workItem from="1734015988113" duration="1030000" />
+      <workItem from="1734171479943" duration="760000" />
+      <workItem from="1734172903051" duration="185000" />
+      <workItem from="1734173096960" duration="400000" />
+      <workItem from="1734173507851" duration="331000" />
+      <workItem from="1734174058642" duration="1012000" />
+      <workItem from="1734175086668" duration="8746000" />
+      <workItem from="1734340176395" duration="14440000" />
+      <workItem from="1734616587744" duration="171000" />
+      <workItem from="1734617873701" duration="1424000" />
+      <workItem from="1734951760263" duration="8947000" />
+      <workItem from="1735385212230" duration="9366000" />
+      <workItem from="1735395333128" duration="431000" />
+      <workItem from="1735896377318" duration="762000" />
+      <workItem from="1735897299798" duration="10338000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -5,84 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9aa4f6f6-0d5a-4903-9315-283b752b9c8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgresql-42.7.4 (1).jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/Appointments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/BarberDateAndTimeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/DataBaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/MyAppointmentsForEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/changePassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/mainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/myAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/myAppointmentsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/selectAppointment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/Appoiment.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/BarberDateAndTime.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/Register.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/changePassword.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/myAccount.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/myAppointments.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/myAppointmentsForEmployee.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/selectAppoiment.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/1000_F_365516654_B0J3aPLd1FZw4bPtDEIIoSfkbw0OHnlJ.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/adam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/adress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/barbershop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/costi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8-instagram-16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8-tiktok-30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/ionel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/lock.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/Appoiment.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/BarberDateAndTime.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/BarberDateAndTimeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/DataBaseConnection.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/HelloApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/Register.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/RegisterController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/changePassword.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/changePassword.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/mainApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/myAccount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/myAccount.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/selectAppoiment.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/selectAppointment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/1000_F_365516654_B0J3aPLd1FZw4bPtDEIIoSfkbw0OHnlJ.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/adam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/barbershop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/costi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/ionel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/lock.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/images/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/barbershop/Appointments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/Appointments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/barbershop/BarberDateAndTimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/BarberDateAndTimeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/barbershop/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/barbershop/MyAppointmentsForEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/MyAppointmentsForEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/barbershop/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/barbershop/changePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/changePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/barbershop/myAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/myAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/barbershop/myAppointmentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/barbershop/myAppointmentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/Appoiment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/Appoiment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/myAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/barbershop/myAccount.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/barbershop/myAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/myAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/barbershop/myAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/myAccount.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/barbershop/selectAppointment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/barbershop/selectAppointment.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +58,7 @@
     &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/ilieb/IdeaProjects/Work_Activites/BarberShop/src/main/java/com/example/barbershop&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ilieb/IdeaProjects/Work_Activites/BarberShop&quot;,
@@ -191,7 +129,9 @@
       <workItem from="1735385212230" duration="9366000" />
       <workItem from="1735395333128" duration="431000" />
       <workItem from="1735896377318" duration="762000" />
-      <workItem from="1735897299798" duration="10338000" />
+      <workItem from="1735897299798" duration="11662000" />
+      <workItem from="1735988463321" duration="3337000" />
+      <workItem from="1736001587792" duration="3693000" />
     </task>
     <servers />
   </component>

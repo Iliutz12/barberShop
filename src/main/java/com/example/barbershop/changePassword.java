@@ -9,6 +9,8 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import javafx.stage.StageStyle;
+import org.mindrot.jbcrypt.BCrypt;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -62,17 +64,14 @@ public class changePassword {
         String newPassword = newPasswordField.getText();
         String confirmPassword = confrimNewPasswordField.getText();
 
-        if(oldPassword.equals(confirmPassword)) {
-            passwordNotMatchingLabel.setText("Password cannot be the same");
+        if (oldPassword.equals(confirmPassword)) {
+            passwordNotMatchingLabel.setText("New password cannot be the same as the old password.");
             return;
-        }else if(oldPassword.equals("")){
-            passwordNotMatchingLabel.setText("Password cannot be empty");
+        } else if (oldPassword.isEmpty() || newPassword.isEmpty() || confirmPassword.isEmpty()) {
+            passwordNotMatchingLabel.setText("Passwords cannot be empty.");
             return;
         } else if (!newPassword.equals(confirmPassword)) {
-            passwordNotMatchingLabel.setText("Passwords do not match");
-            return;
-        } else if(newPassword.equals("") || confirmPassword.equals("")) {
-            passwordNotMatchingLabel.setText("Password cannot be empty");
+            passwordNotMatchingLabel.setText("New passwords do not match.");
             return;
         }
 
@@ -81,7 +80,6 @@ public class changePassword {
             Connection connectDb = connectNow.getConnection();
 
             if (connectDb != null) {
-                // Verifică parola curentă în baza de date
                 String query = "SELECT password FROM user_account WHERE username = ?";
                 PreparedStatement preparedStatement = connectDb.prepareStatement(query);
                 preparedStatement.setString(1, currentUsername);
@@ -89,12 +87,14 @@ public class changePassword {
                 ResultSet resultSet = preparedStatement.executeQuery();
 
                 if (resultSet.next()) {
-                    String currentPassword = resultSet.getString("password");
+                    String hashedPassword = resultSet.getString("password");
 
-                    if (currentPassword.equals(oldPassword)) {
+                    if (BCrypt.checkpw(oldPassword, hashedPassword)) {
+                        String hashedNewPassword = BCrypt.hashpw(newPassword, BCrypt.gensalt());
+
                         String updateQuery = "UPDATE user_account SET password = ? WHERE username = ?";
                         PreparedStatement updateStatement = connectDb.prepareStatement(updateQuery);
-                        updateStatement.setString(1, newPassword);
+                        updateStatement.setString(1, hashedNewPassword);
                         updateStatement.setString(2, currentUsername);
 
                         int rowsUpdated = updateStatement.executeUpdate();
@@ -107,6 +107,8 @@ public class changePassword {
                     } else {
                         passwordNotMatchingLabel.setText("Old password is incorrect.");
                     }
+                } else {
+                    passwordNotMatchingLabel.setText("User not found.");
                 }
             }
             connectDb.close();
@@ -115,6 +117,7 @@ public class changePassword {
             showAlert(Alert.AlertType.ERROR, "Database Error", "An error occurred.");
         }
     }
+
 
     private void showAlert(Alert.AlertType alertType, String title, String message) {
         Platform.runLater(() -> {

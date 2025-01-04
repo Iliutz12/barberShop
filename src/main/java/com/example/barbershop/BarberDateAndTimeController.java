@@ -284,7 +284,7 @@ public class BarberDateAndTimeController {
             Parent root = loader.load();
 
             selectAppointment controller = loader.getController();
-            controller.getUsername(username1); // Pass the username value
+            controller.getUsername(username1);
 
             Stage registerStage = new Stage();
             registerStage.initStyle(StageStyle.DECORATED);

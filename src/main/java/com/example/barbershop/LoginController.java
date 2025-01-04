@@ -14,6 +14,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import javafx.stage.StageStyle;
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.io.File;
 import java.net.URL;
@@ -70,27 +71,36 @@ public class LoginController implements Initializable {
         DataBaseConnection connectNow = new DataBaseConnection();
         Connection connectDb = connectNow.getConnection();
 
-
-        String verifyLogin = "SELECT COUNT(*) FROM user_account WHERE username = ? AND password = ?";
+        String verifyLoginQuery = "SELECT password FROM user_account WHERE username = ?";
 
         try {
-            PreparedStatement preparedStatement = connectDb.prepareStatement(verifyLogin);
+            PreparedStatement preparedStatement = connectDb.prepareStatement(verifyLoginQuery);
             preparedStatement.setString(1, usernameTextField.getText());
-            preparedStatement.setString(2, enterPasswordField.getText());
 
             ResultSet queryResultSet = preparedStatement.executeQuery();
 
-            if (queryResultSet.next() && queryResultSet.getInt(1) > 0) {
-                mainApplication();
+            if (queryResultSet.next()) {
+                String hashedPassword = queryResultSet.getString("password");
+
+                if (BCrypt.checkpw(enterPasswordField.getText(), hashedPassword)) {
+                    mainApplication();
+                } else {
+                    loginMessageLabel.setText("Invalid username or password.");
+                }
             } else {
                 loginMessageLabel.setText("Invalid username or password.");
             }
         } catch (Exception e) {
             e.printStackTrace();
             loginMessageLabel.setText("An error occurred while logging in.");
+        } finally {
+            try {
+                connectDb.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
-
     public void createAccountForm() {
 
         try {

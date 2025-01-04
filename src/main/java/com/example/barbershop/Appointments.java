@@ -12,6 +12,7 @@ public class Appointments {
     private IntegerProperty price;
     private BooleanProperty canceled;
     private StringProperty username;
+    private String specialistName;
 
     public Appointments() {
         this.appointmentID = new SimpleIntegerProperty();
@@ -22,6 +23,14 @@ public class Appointments {
         this.canceled = new SimpleBooleanProperty();
         this.dateCreated = new SimpleStringProperty();
         this.username = new SimpleStringProperty();
+    }
+
+    public String getSpecialistName() {
+        return specialistName;
+    }
+
+    public void setSpecialistName(String specialistName) {
+        this.specialistName = specialistName;
     }
 
     public int getAppointmentID() {

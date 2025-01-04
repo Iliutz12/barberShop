@@ -37,7 +37,8 @@ public class MyAppointmentsForEmployee {
 
     @FXML
     public void initialize() {
-        colId.setCellValueFactory(data -> data.getValue().appointmentIDProperty().asObject().asString());
+        colId.setCellValueFactory(data ->
+                new SimpleStringProperty(String.valueOf(appointmentsTable.getItems().indexOf(data.getValue()) + 1)));
         colUsername.setCellValueFactory(data -> data.getValue().usernameProperty());
         colDateCreated.setCellValueFactory(data -> data.getValue().dateCreatedProperty());
         colStartTime.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getStartTime()));
@@ -94,13 +95,13 @@ public class MyAppointmentsForEmployee {
         while (resultSet.next()) {
             Appointments app = new Appointments();
 
-            app.setAppointmentID(resultSet.getInt("appointment_id"));  // Matches "id AS appointment_id"
+            app.setAppointmentID(resultSet.getInt("appointment_id"));
             app.setUsername(resultSet.getString("username"));
-            app.setDateTimeCreated(resultSet.getDate("date").toString());  // Matches "date"
+            app.setDateTimeCreated(resultSet.getDate("date").toString());
             app.setStartTime(resultSet.getString("start_time"));
-            app.setAppointmentType(resultSet.getString("appointment_type"));  // Matches "appointment_type"
-            app.setPrice(resultSet.getInt("price_final"));  // Matches "price_final"
-            app.setCanceled(resultSet.getBoolean("canceled"));  // Matches "canceled"
+            app.setAppointmentType(resultSet.getString("appointment_type"));
+            app.setPrice(resultSet.getInt("price_final"));
+            app.setCanceled(resultSet.getBoolean("canceled"));
 
             appList.add(app);
         }
@@ -121,11 +122,15 @@ public class MyAppointmentsForEmployee {
                     Connection connection = dataBaseConnection.getConnection();
 
                     String sql = "DELETE FROM appointments WHERE id = ?";
+                    String sql2 = "UPDATE user_account SET appointments = appointments - 1 WHERE username = ?";
                     PreparedStatement statement = connection.prepareStatement(sql);
+                    PreparedStatement statement2 = connection.prepareStatement(sql2);
                     statement.setInt(1, selectedAppointment.getAppointmentID());
+                    statement2.setString(1, selectedAppointment.getUsername());
 
                     int rowsAffected = statement.executeUpdate();
                     if (rowsAffected > 0) {
+                        statement2.executeUpdate();
                         appointmentsTable.getItems().remove(selectedAppointment);
                         Alert alert = new Alert(Alert.AlertType.INFORMATION);
                         alert.setTitle("Success");

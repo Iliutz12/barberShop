@@ -109,7 +109,7 @@ public class myAccount {
 
             Stage registerStage = new Stage();
             registerStage.initStyle(StageStyle.DECORATED);
-            registerStage.setScene(new Scene(root, 520, 400));
+            registerStage.setScene(new Scene(root, 506, 281));
             registerStage.show();
 
             Stage currentStage = (Stage) changePasswordButton.getScene().getWindow();

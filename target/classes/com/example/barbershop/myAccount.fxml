@@ -58,7 +58,7 @@
             <Font name="Times New Roman Bold" size="24.0" />
          </font>
       </Button>
-      <Button fx:id="seeApointmentsButton" layoutX="92.0" layoutY="226.0" mnemonicParsing="false" onAction="#myAppointmentsOnAction" text="SEE YOUR APPOINTMETS">
+      <Button fx:id="seeApointmentsButton" layoutX="92.0" layoutY="226.0" mnemonicParsing="false" onAction="#myAppointmentsOnAction" text="SEE YOUR APPOINTMENTS">
          <font>
             <Font name="Times New Roman Bold" size="24.0" />
          </font>

@@ -37,8 +37,9 @@ public class myAppointmentsController {
 
     @FXML
     public void initialize() {
-        colId.setCellValueFactory(data -> new SimpleStringProperty(String.valueOf(data.getValue().getAppointmentID())));
-        colSpecialist.setCellValueFactory(data -> new SimpleStringProperty(String.valueOf(data.getValue().getSpecialistId())));
+        colId.setCellValueFactory(data ->
+                new SimpleStringProperty(String.valueOf(appointmentsTable.getItems().indexOf(data.getValue()) + 1)));
+        colSpecialist.setCellValueFactory(data -> new SimpleStringProperty(String.valueOf(data.getValue().getSpecialistName())));
         colStartTime.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getStartTime()));
         colDateCreated.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getDateTimeCreated()));
         colType.setCellValueFactory(data -> data.getValue().appointmentTypeProperty());
@@ -71,8 +72,8 @@ public class myAppointmentsController {
             userId = resultSet2.getInt("id");
         }
 
-        String sql = "SELECT id AS appointment_id, date, employee_id, start_time, appointment_type, price_final, canceled " +
-                "FROM appointments WHERE user_id = ?";
+        String sql = "SELECT a.id AS appointment_id, a.date, e.firstname AS specialist_name , a.start_time, a.appointment_type, a.price_final, a.canceled " +
+                "FROM appointments a join employee e on a.employee_id = e. id WHERE user_id = ?";
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setInt(1, userId);
 
@@ -85,7 +86,7 @@ public class myAppointmentsController {
         while (resultSet.next()) {
             Appointments app = new Appointments();
             app.setAppointmentID(resultSet.getInt("appointment_id"));
-            app.setSpecialistId(resultSet.getInt("employee_id"));
+            app.setSpecialistName(resultSet.getString("specialist_name"));
             app.setDateTimeCreated(resultSet.getString("date"));
             app.setStartTime(resultSet.getString("start_time"));
             app.setAppointmentType(resultSet.getString("appointment_type"));

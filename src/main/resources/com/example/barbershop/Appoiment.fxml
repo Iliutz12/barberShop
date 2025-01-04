@@ -57,12 +57,12 @@
                   <Image url="@../../../images/icons8-instagram-16.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="51.0" fitWidth="35.0" layoutX="83.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="51.0" fitWidth="35.0" layoutX="83.0" layoutY="554.0" onMouseClicked="#openFacebook" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/facebook.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="51.0" fitWidth="35.0" layoutX="131.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="51.0" fitWidth="35.0" layoutX="131.0" layoutY="554.0" onMouseClicked="#openTikTok" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/icons8-tiktok-30.png" />
                </image>

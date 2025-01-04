@@ -4,6 +4,7 @@ module com.example.barbershop {
     requires org.postgresql.jdbc;
     requires javafx.web;
     requires java.desktop;
+    requires jbcrypt;
 
 
     opens com.example.barbershop to javafx.fxml;

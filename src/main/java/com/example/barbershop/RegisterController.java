@@ -17,6 +17,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import org.mindrot.jbcrypt.BCrypt;
 
 public class RegisterController {
 
@@ -109,12 +110,13 @@ public class RegisterController {
             return;
         }
 
+        String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
         String insertQuery = "INSERT INTO user_account (firstname, lastname, username, password, appointments) VALUES (?, ?, ?, ?, ?)";
         try (PreparedStatement preparedStatement = connectDb.prepareStatement(insertQuery)) {
             preparedStatement.setString(1, firstName);
             preparedStatement.setString(2, lastName);
             preparedStatement.setString(3, username);
-            preparedStatement.setString(4, password);
+            preparedStatement.setString(4, hashedPassword);
             preparedStatement.setInt(5, 0);
 
             preparedStatement.executeUpdate();
